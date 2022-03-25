@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PracticeC
+{
+    internal class Example
+    {   
+       
+        static void Main(string[] args)
+        {
+            string sentence = "This sentence has five words.";
+            // Extract the second word.
+            int startPosition = sentence.IndexOf(" ") + 1;//s
+            string word2 = sentence.Substring(startPosition, sentence.IndexOf(" ", startPosition) - startPosition);
+            Console.WriteLine("Second word: " + word2);
+            /*Console.WriteLine(sentence.IndexOf(" ") + 1);
+            Console.WriteLine(sentence.IndexOf(" ", startPosition));//e 
+            Console.WriteLine(startPosition);
+            Console.WriteLine(sentence.IndexOf(" ", startPosition) - startPosition);*/
+
+
+        }
+
+    }
+}
